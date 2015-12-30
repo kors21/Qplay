@@ -3,12 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge;" />
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>QPLAY</title>
 <meta name="robots" content="index,follow" />
 <meta name="description" content="넥슨 큐플레이 홈페이지" />
 <meta name="copyright" content="&copy; 1999 NEXON Corporation. All Rights Reserved." />
 <meta name="author" content="NEXON" />
+<meta name="developer" content="kors21" />
+<meta name="special_thanks" content="뮤에르트,루드" />
+<meta name="office" content="Nsouls" />
 <meta name="keywords" content="NEXON, 넥슨, QPLAY, 큐플레이" />
 <link rel="Shortcut Icon" href="http://s.nx.com/S2/Game/Qplay/2010/icon/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="http://s.nx.com/S2/Game/Qplay/2010/icon/favicon.ico" type="image/x-icon" />
@@ -45,13 +48,15 @@
 	-->
 	
 	<div id="middle" align="center">
-		
-		<img src="qplay.png" width="25%" />
-		<br />
+		<div style="margin:30px 0">
+		<img src="qplay.png" />
+		</div>
+				
 		<object data="https://www.youtube.com/embed/s5iLdq5t4Rs" width="96%" height="615"></object>	
+		<p align="right" style="padding:10px 20px 0 0">
+			<a href="#" onclick="window.open('notice.html','', 'toolbar=no, scrollbars=yes, width=974, height=625'); return false;">[종료 안내 공지]</a>
+		</p>		
 	</div>	
-		
-
 		
 	<div id="footer">
 		<h2>큐플레이 관련 정보</h2>
@@ -82,33 +87,7 @@
 
 </div>
 
-<script type='text/javascript'>
-                            function QxLaunchGame()
-                            {
-                                PS.game.startGame({
-	                                gameCode: 786433,
-	                                param: 0
-	                            });	
-	                            
-                                document.getElementById( 'ifrWiselog' ).src = '/wiselog/gamestart.aspx';	                           
-                            }
-                             
-                            function QxForceInstall()
-                            {
-                                PS.game.startGame({
-	                                gameCode: 786433,
-	                                param: 0,
-	                                forceInstall: true
-	                            });	                            
-                            }
-                            function doGameStart()
-                            {
-		                        alert('로그인 후 이용해 주세요!');
-                            }
-                            </script>
-                            </form>
 <script type="text/javascript" src="/js/NxAOS.js"></script>
 <script type="text/javascript" src="http://js.nx.com/s1/global/ngb_bodyend.js"></script>	
 </body>
 </html>
-<iframe id="ifrWiselog" width="0" height="0" NORESIZE SCROLLING="No" FRAMEBORDER="0" MARGINHEIGHT="0" MARGINWIDTH="0" border="0" />
